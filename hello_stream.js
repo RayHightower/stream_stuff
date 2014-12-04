@@ -6,7 +6,7 @@ http.createServer(function(request, response) {
   request.pipe(newFile);
 
   request.on('end', function() {
-    response.ned('uploaded!');
+    response.end('uploaded!');
   });
 }).listen(8080);
 
